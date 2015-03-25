@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="336.9999337890549" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="2.0" prefHeight="50.0" prefWidth="336.9998779296875">
+      <children>
+        <Label layoutX="14.0" layoutY="12.0" text="Крестики: ">
+          <font>
+            <Font size="15.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="216.0" layoutY="13.0" text="Нолики: " />
+        <Label fx:id="x_score" layoutX="115.0" layoutY="12.0" prefWidth="21.0" text="0">
+          <font>
+            <Font size="20.0" fx:id="x2" />
+          </font>
+        </Label>
+        <Label id="y_score" fx:id="o_score" font="$x2" layoutX="302.0" layoutY="12.0" prefWidth="21.0" text="0" />
+      </children>
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </AnchorPane>
+    <GridPane fx:id="grid_pane" layoutX="14.0" layoutY="50.0">
+      <Button prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <font>
+          <Font size="12.0" />
+        </font>
+      </Button>
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <GridPane.margin>
+          <Insets left="5.0" fx:id="x3" />
+        </GridPane.margin>
+      </Button>
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.margin="$x3" GridPane.rowIndex="1" />
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <GridPane.margin>
+          <Insets top="5.0" fx:id="x5" />
+        </GridPane.margin>
+      </Button>
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <GridPane.margin>
+          <Insets left="5.0" top="5.0" fx:id="x4" />
+        </GridPane.margin>
+      </Button>
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.margin="$x4" GridPane.rowIndex="2" />
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.margin="$x5" GridPane.rowIndex="3" />
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.margin="$x4" GridPane.rowIndex="3" />
+      <Button prefHeight="100.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.margin="$x4" GridPane.rowIndex="3" />
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </GridPane>
+    <AnchorPane layoutX="0.0" layoutY="360.0" prefHeight="50.0" prefWidth="336.99995585936995">
+      <children>
+        <Button id="btnReatsrt" fx:id="btnRestart" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="147.0" styleClass="btnBottom" text="Очистить поле" />
+        <Button fx:id="btnClearScore" layoutX="169.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="155.0" styleClass="btnBottom" text="Очистить счет" />
+      </children>
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

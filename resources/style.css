@@ -1,0 +1,19 @@
+.button {
+	-fx-background-color: 
+		linear-gradient(#43aee9 0%, #43aee9 25%, #166898 75%, #185579 100%);
+	-fx-font-size: 41;
+	-fx-text-fill: white;
+	-fx-font-family: Beacon;
+}
+
+.label {
+	-fx-font-family: Georgia;
+	-fx-font-size: 20;
+}
+
+.btnBottom {
+	-fx-background-color: rgb(38,130,232);
+	-fx-text-fill: rgb(255,255,255);
+	-fx-font-family: Beacon;
+	-fx-font-size: 14;
+}
